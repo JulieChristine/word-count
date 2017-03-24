@@ -10,7 +10,13 @@ describe('String#wordcount') do
       expect("Clean clams crammed in clean cans.".wordcount("clean")).to(eq(2))
   end
 
-    it("returns the number of times the word hello is detected in the sentence regardless of punctuation") do
-        expect("Can you can a can as a canner can can a can?".wordcount("can")).to(eq(6))
-    end
+  it("returns the number of times the word hello is detected in the sentence regardless of punctuation") do
+      expect("Can you can a can as a canner can can a can?".wordcount("can")).to(eq(6))
+  end
+end
+
+describe('String#partialword') do
+  it("returns the number of times the word cat is detected in the sentence, even when its a partial") do
+      expect("I’m taking my cat on a walk through the catacombs cat.".partialword("cat")).to(eq(3))
+  end
 end
