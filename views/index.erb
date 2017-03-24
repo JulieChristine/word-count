@@ -19,8 +19,27 @@
     <button type="submit" class="btn">Go!</button>
   </form>
 
-  <div class="many_times">
+  <div class="count_display">
       <h5><%= @sentence %> <br/>
       <%= @count %><%= @word %></h5>
+  </div>
+</div>
+
+<div class="container">
+  <form action="/partial_count">
+    <div class="form-group">
+       <label for="phrase">Enter here the sentence you want to check:</label>
+       <input id="phrase" name="phrase" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+      <label for="partial">Enter here the word you want to check for:</label>
+      <input id="partial" name="partial" class="form-control" type="text">
+   </div>
+    <button type="submit" class="btn">Go!</button>
+  </form>
+
+  <div class="partial_display">
+      <h5><%= @phrase %> <br/>
+      <%= @count_partial %><%= @partial %></h5>
   </div>
 </div>

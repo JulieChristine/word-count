@@ -1,0 +1,18 @@
+* {
+  border: solid 1px black;
+}
+
+
+.btn {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 999px;
+  border: solid 3px #c90016;
+  font-size: 12px;
+  display: inline-block;
+  text-decoration: none;
+  margin:12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
